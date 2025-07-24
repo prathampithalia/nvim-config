@@ -1,0 +1,28 @@
+{
+  "languageserver": {
+    "clangd": {
+      "command": "clangd",
+      "rootPatterns": [
+        "compile_flags.txt",
+        ".git",
+        "compile_commands.json"
+      ],
+      "filetypes": ["c", "cpp", "objc", "objcpp"],
+      "initializationOptions": {
+        "fallbackFlags": ["-std=c++17"]
+      }
+    }
+  },
+
+  // 👇 Snippet support via JSON
+  //"snippets.ultisnips.enable": false,
+  "snippets.userSnippetsDirectory": "C:\\Users\\ACER\\AppData\\Local\\coc\\snippets",
+
+  // 👇 Optional: better suggestion UX
+  //  "suggest.noselect": false,
+  // "suggest.enablePreselect": true
+
+  "coc.preferences.formatOnSaveFiletypes": ["cpp", "c"],
+  "clangd.arguments": ["--fallback-style=LLVM"],
+  "coc.preferences.formatOnSave": true
+}
